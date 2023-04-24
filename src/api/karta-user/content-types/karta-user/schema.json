@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "karta_users",
+  "info": {
+    "singularName": "karta-user",
+    "pluralName": "karta-users",
+    "displayName": "KST Trade | Данные для парсинга",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "login": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "need_to_parse": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
